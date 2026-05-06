@@ -50,7 +50,7 @@ The goal of this project is to predict melanoma thickness from dermoscopic image
 
 - Image preprocessing
 - Model training on CPU
-- Binary and multiclass prediction
+- Binary and multi class prediction
 - Confidence score output
 - Simple web interface for image upload
 
