@@ -54,6 +54,3 @@ The goal of this project is to predict melanoma thickness from dermoscopic image
 - Confidence score output
 - Simple web interface for image upload
 
-## Note
-
-This project is being uploaded step by step and will be fully structured soon.
