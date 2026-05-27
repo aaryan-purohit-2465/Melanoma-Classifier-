@@ -48,3 +48,4 @@ if __name__ == "__main__":
         raise SystemExit(1)
     a = predict_image(sys.argv[1], sys.argv[2])
     print(a)
+    
