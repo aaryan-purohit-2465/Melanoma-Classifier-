@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanoma Thickness Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="box">
+        <h1>Melanoma Thickness Classifier</h1>
+        <p class="sub">Binary and multiclass prediction from dermoscopic images</p>
+
+        <form method="POST" enctype="multipart/form-data">
+            <label for="model_type">Choose model</label>
+            <select name="model_type" id="model_type">
+                <option value="binary">Binary: Thin vs Thick</option>
+                <option value="multiclass">Multiclass: Thin / Intermediate / Thick</option>
+            </select>
+
+            <label for="image">Upload dermoscopic image</label>
+            <input type="file" name="image" id="image" accept="image/*" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if error %}
+        <div class="card error">{{ error }}</div>
+        {% endif %}
+
+        {% if predicted %}
+        <div class="card">
+            <h2>Result</h2>
+            <p><strong>Predicted class:</strong> {{ predicted }}</p>
+            <p><strong>Confidence:</strong> {{ confidence }}%</p>
+            {% if image_path %}
+            <img src="{{ url_for('uploaded_file', a=image_name) }}" alt="Uploaded image">
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
