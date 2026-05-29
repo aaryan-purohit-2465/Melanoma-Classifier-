@@ -22,7 +22,7 @@ A machine learning project for classifying melanoma thickness from dermoscopic i
 ## Features
 
 - Image preprocessing
-- Binary and multiclass classification
+- Binary and multi class classification
 - Confidence score prediction
 - Model training and evaluation
 - Flask web app for image upload
