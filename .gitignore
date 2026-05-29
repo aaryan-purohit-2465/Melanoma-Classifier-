@@ -19,8 +19,6 @@ uploads/
 # Trained models
 models/*.pth
 
-# Results
-results/
 
 # VS Code
 .vscode/
