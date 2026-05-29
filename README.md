@@ -1,23 +1,11 @@
 # Melanoma Thickness Classification
 
-An in-progress machine learning project for classifying melanoma thickness from dermoscopic images using binary and multiclass models.
+A machine learning project for classifying melanoma thickness from dermoscopic images using binary and multiclass models.
 
-## Status
+## Classes
 
-This repository is currently under development and files are being added gradually.
-
-## Objective
-
-The goal of this project is to predict melanoma thickness from dermoscopic images in two ways:
-
-- Binary classification:
-  - Thin (<= 1 mm)
-  - Thick (> 1 mm)
-
-- Multiclass classification:
-  - Thin
-  - Intermediate
-  - Thick
+- Binary: Thin (<= 1 mm) and Thick (> 1 mm)
+- Multiclass: Thin, Intermediate, Thick
 
 ## Tech Stack
 
@@ -31,26 +19,23 @@ The goal of this project is to predict melanoma thickness from dermoscopic image
 - HTML
 - CSS
 
-## Current Files
-
-- `requirements.txt`
-- `app.py`
-
-## Upcoming Files
-
-- `data.py`
-- `model.py`
-- `train.py`
-- `evaluate.py`
-- `predict.py`
-- `templates/index.html`
-- `static/style.css`
-
-## Expected Features
+## Features
 
 - Image preprocessing
-- Model training on CPU
-- Binary and multi class prediction
-- Confidence score output
-- Simple web interface for image upload
+- Binary and multiclass classification
+- Confidence score prediction
+- Model training and evaluation
+- Flask web app for image upload
+- Dummy dataset generation if dataset is missing
+
+## Run
+
+pip install -r requirements.txt
+python app.py
+
+## Output
+Predicted class
+Confidence score
+
+
 
